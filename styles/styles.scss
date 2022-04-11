@@ -1,0 +1,99 @@
+// Language: scss
+
+//
+// Basic Modifying as per your requirement
+//
+
+// primary__colors
+$navigation__color: #202020;
+$color__main: #181818;
+$chips: #4d4d4d;
+$header__text: #eaeaea;
+$text: #f9f9f9;
+$text__cards: #5f5f5f;
+$white: #ffffff;
+$black: #121212;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $chips;
+}
+
+// navbar
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: $white;
+
+  &__main__section {
+    width: calc(100vw - 1200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+      background: $chips;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      float: left;
+      padding: 1px 1px;
+    }
+    &__content input {
+      // background: $black;
+      color: $text__cards;
+      border: none;
+      height: 37px;
+      padding: 10px 5px;
+      width: 95%;
+      font-size: 1.095rem;
+      margin-inline-end: 5px;
+      margin-inline-start: 1px;
+    }
+    &__content > button svg {
+      padding-top: 4px;
+      margin-inline: 10px;
+    }
+    &__container {
+      margin-inline-start: 10px;
+      background: $chips;
+      padding: 0px 4px;
+      border-radius: 50%;
+    }
+    &__container > button svg {
+      padding-top: 5px;
+    }
+  }
+
+  &__right__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__right__section button {
+    margin-inline: 10px;
+    aspect-ratio: 1;
+    width: 37px;
+    border-radius: 50%;
+  }
+}
+.navigation__icon {
+  aspect-ratio: 1;
+  width: 30px;
+}
+
+.button__icons {
+  background: transparent;
+  border: none;
+}

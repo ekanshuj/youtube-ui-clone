@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #4d4d4d;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: #ffffff;
+}
+
+.navigation__main__section {
+  width: calc(100vw - 1200px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation__main__section__content {
+  background: #4d4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  float: left;
+  padding: 1px 1px;
+}
+
+.navigation__main__section__content input {
+  color: #5f5f5f;
+  border: none;
+  height: 37px;
+  padding: 10px 5px;
+  width: 95%;
+  font-size: 1.095rem;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  -webkit-margin-start: 1px;
+          margin-inline-start: 1px;
+}
+
+.navigation__main__section__content > button svg {
+  padding-top: 4px;
+  margin-inline: 10px;
+}
+
+.navigation__main__section__container {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+  background: #4d4d4d;
+  padding: 0px 4px;
+  border-radius: 50%;
+}
+
+.navigation__main__section__container > button svg {
+  padding-top: 5px;
+}
+
+.navigation__right__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation__right__section button {
+  margin-inline: 10px;
+  aspect-ratio: 1;
+  width: 37px;
+  border-radius: 50%;
+}
+
+.navigation__icon {
+  aspect-ratio: 1;
+  width: 30px;
+}
+
+.button__icons {
+  background: transparent;
+  border: none;
+}
+/*# sourceMappingURL=styles.css.map */
