@@ -67,7 +67,8 @@ body {
     }
     &__container {
       margin-inline-start: 10px;
-      background: $chips;
+      // background: $chips;
+      border: 1px solid $chips;
       padding: 0px 4px;
       border-radius: 50%;
     }
@@ -96,4 +97,90 @@ body {
 .button__icons {
   background: transparent;
   border: none;
+}
+
+// chips bar-plate
+
+.chips {
+  width: calc(100vw - 13%);
+  float: right;
+  border-top: 1px solid grey;
+  padding: 20px 25px;
+  border-bottom: 1px solid grey;
+
+  &__class {
+    text-decoration: none;
+    font-size: 0.859rem;
+    color: black;
+    background: $chips;
+    color: $white;
+    padding: 10px 12px;
+    border-radius: 20px;
+  }
+  &__active {
+    background: black;
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+// aside - section
+
+.section__aside {
+  background: rgb(56, 42, 182);
+  width: calc(100vw - 87%);
+  position: fixed;
+  top: 62px;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  padding: 10px 0rem;
+
+  & hr {
+    margin: 1rem 0rem;
+  }
+
+  & > .info {
+    padding: 5px 15px;
+  }
+
+  & > .info > .info__content a {
+    text-decoration: none;
+    color: $white;
+    font-size: 0.821rem;
+  }
+
+  & > .trademark {
+    margin-inline-start: 15px;
+    padding: 5px 0px;
+    font-weight: bold;
+  }
+
+  & .span__heading {
+    padding-inline-start: 15px;
+    margin: 7px 0px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__active {
+    background: $text__cards;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+    padding-inline-start: 15px;
+
+    &:hover {
+      background: $text__cards;
+      opacity: 0.85;
+    }
+    &__icons {
+      aspect-ratio: 1;
+      width: 30px;
+    }
+  }
 }
