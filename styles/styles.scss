@@ -34,6 +34,9 @@ body {
   left: 0;
   padding: 10px;
   background: $white;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
 
   &__main__section {
     width: calc(100vw - 1200px);
@@ -107,6 +110,10 @@ body {
   border-top: 1px solid grey;
   padding: 20px 25px;
   border-bottom: 1px solid grey;
+  position: fixed;
+  left: 240px;
+  top: 62px;
+  z-index: 99;
 
   &__class {
     text-decoration: none;
@@ -136,26 +143,26 @@ body {
   overflow-y: scroll;
   padding: 10px 0rem;
 
+  & span {
+    color: whitesmoke;
+    font-size: 0.9rem;
+  }
   & hr {
     margin: 1rem 0rem;
   }
-
   & > .info {
     padding: 5px 15px;
   }
-
   & > .info > .info__content a {
     text-decoration: none;
-    color: $white;
     font-size: 0.821rem;
+    color: $white;
   }
-
   & > .trademark {
     margin-inline-start: 15px;
     padding: 5px 0px;
     font-weight: bold;
   }
-
   & .span__heading {
     padding-inline-start: 15px;
     margin: 7px 0px;
@@ -163,7 +170,6 @@ body {
     text-transform: uppercase;
     font-weight: 600;
   }
-
   &__active {
     background: $text__cards;
   }
@@ -181,6 +187,53 @@ body {
     &__icons {
       aspect-ratio: 1;
       width: 30px;
+    }
+  }
+}
+
+// main cards section
+
+.main {
+  width: calc(100vw - 13%);
+  float: right;
+  position: relative;
+  top: 125px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  padding: 1.2rem 2rem;
+
+  &__cards {
+    width: 370px;
+    padding: 0.25rem;
+
+    &__img {
+      background: greenyellow;
+      height: 200px;
+    }
+    &__info {
+      display: flex;
+      margin-inline-start: 0.1rem;
+      padding: 11px 0px;
+
+      &__profile > button {
+        // margin-inline: 10px;
+        aspect-ratio: 1;
+        width: 37px;
+        border-radius: 50%;
+      }
+      &__text {
+        margin: 0.2rem 0.7rem;
+      }
+
+      &__text > h6 {
+        font-size: 1rem;
+        color: $white;
+        line-height: 1.65rem;
+      }
+      &__text > p {
+        font-size: 0.889rem;
+      }
     }
   }
 }

@@ -23,6 +23,9 @@ body {
   left: 0;
   padding: 10px;
   background: #ffffff;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
 }
 
 .navigation__main__section {
@@ -119,6 +122,10 @@ body {
   border-top: 1px solid grey;
   padding: 20px 25px;
   border-bottom: 1px solid grey;
+  position: fixed;
+  left: 240px;
+  top: 62px;
+  z-index: 99;
 }
 
 .chips__class {
@@ -148,6 +155,11 @@ body {
   padding: 10px 0rem;
 }
 
+.section__aside span {
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+
 .section__aside hr {
   margin: 1rem 0rem;
 }
@@ -158,8 +170,8 @@ body {
 
 .section__aside > .info > .info__content a {
   text-decoration: none;
-  color: #ffffff;
   font-size: 0.821rem;
+  color: #ffffff;
 }
 
 .section__aside > .trademark {
@@ -202,5 +214,57 @@ body {
 .section__aside__content__icons {
   aspect-ratio: 1;
   width: 30px;
+}
+
+.main {
+  width: calc(100vw - 13%);
+  float: right;
+  position: relative;
+  top: 125px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: (minmax(370px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  padding: 1.2rem 2rem;
+}
+
+.main__cards {
+  width: 370px;
+  padding: 0.25rem;
+}
+
+.main__cards__img {
+  background: greenyellow;
+  height: 200px;
+}
+
+.main__cards__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-margin-start: 0.1rem;
+          margin-inline-start: 0.1rem;
+  padding: 11px 0px;
+}
+
+.main__cards__info__profile > button {
+  aspect-ratio: 1;
+  width: 37px;
+  border-radius: 50%;
+}
+
+.main__cards__info__text {
+  margin: 0.2rem 0.7rem;
+}
+
+.main__cards__info__text > h6 {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.65rem;
+}
+
+.main__cards__info__text > p {
+  font-size: 0.889rem;
 }
 /*# sourceMappingURL=styles.css.map */
