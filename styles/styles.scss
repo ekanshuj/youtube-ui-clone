@@ -5,11 +5,7 @@
 //
 
 // primary__colors
-$navigation__color: #202020;
-$color__main: #181818;
-$chips: #4d4d4d;
-$header__text: #eaeaea;
-$text: #f9f9f9;
+$chips: #e5e5e5;
 $text__cards: #5f5f5f;
 $white: #ffffff;
 $black: #121212;
@@ -22,6 +18,10 @@ $black: #121212;
 
 body {
   background: $chips;
+}
+
+body button {
+  cursor: pointer;
 }
 
 // navbar
@@ -70,7 +70,6 @@ body {
     }
     &__container {
       margin-inline-start: 10px;
-      // background: $chips;
       border: 1px solid $chips;
       padding: 0px 4px;
       border-radius: 50%;
@@ -91,6 +90,10 @@ body {
     width: 37px;
     border-radius: 50%;
   }
+  &__right__section .navigation__profile {
+    background: $black;
+    cursor: pointer;
+  }
 }
 .navigation__icon {
   aspect-ratio: 1;
@@ -100,6 +103,10 @@ body {
 .button__icons {
   background: transparent;
   border: none;
+}
+
+.navigation img {
+  cursor: pointer;
 }
 
 // chips bar-plate
@@ -114,18 +121,19 @@ body {
   left: 240px;
   top: 62px;
   z-index: 99;
+  background: $white;
 
   &__class {
     text-decoration: none;
     font-size: 0.859rem;
-    color: black;
+    color: $black;
     background: $chips;
-    color: $white;
+    color: $black;
     padding: 10px 12px;
     border-radius: 20px;
   }
   &__active {
-    background: black;
+    background: $black;
     color: $white;
     font-weight: 600;
   }
@@ -134,7 +142,7 @@ body {
 // aside - section
 
 .section__aside {
-  background: rgb(56, 42, 182);
+  background: $white;
   width: calc(100vw - 87%);
   position: fixed;
   top: 62px;
@@ -144,7 +152,7 @@ body {
   padding: 10px 0rem;
 
   & span {
-    color: whitesmoke;
+    color: $black;
     font-size: 0.9rem;
   }
   & hr {
@@ -156,12 +164,13 @@ body {
   & > .info > .info__content a {
     text-decoration: none;
     font-size: 0.821rem;
-    color: $white;
+    color: $text__cards;
   }
   & > .trademark {
     margin-inline-start: 15px;
     padding: 5px 0px;
     font-weight: bold;
+    color: $text__cards;
   }
   & .span__heading {
     padding-inline-start: 15px;
@@ -169,9 +178,11 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
+    color: $text__cards;
   }
   &__active {
-    background: $text__cards;
+    font-weight: 600;
+    background: rgb(218, 214, 214);
   }
 
   &__content {
@@ -179,9 +190,10 @@ body {
     align-items: center;
     padding: 7px 0px;
     padding-inline-start: 15px;
+    cursor: pointer;
 
     &:hover {
-      background: $text__cards;
+      background: rgb(231, 231, 231);
       opacity: 0.85;
     }
     &__icons {
@@ -201,14 +213,16 @@ body {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-gap: 1rem 0rem;
   padding: 1.2rem 2rem;
 
   &__cards {
     width: 370px;
     padding: 0.25rem;
+    cursor: pointer;
 
     &__img {
-      background: greenyellow;
+      background: $text__cards;
       height: 200px;
     }
     &__info {
@@ -217,7 +231,6 @@ body {
       padding: 11px 0px;
 
       &__profile > button {
-        // margin-inline: 10px;
         aspect-ratio: 1;
         width: 37px;
         border-radius: 50%;
@@ -228,8 +241,12 @@ body {
 
       &__text > h6 {
         font-size: 1rem;
-        color: $white;
         line-height: 1.65rem;
+      }
+      &__text > a {
+        font-size: 0.889rem;
+        text-decoration: none;
+        color: $black;
       }
       &__text > p {
         font-size: 0.889rem;
