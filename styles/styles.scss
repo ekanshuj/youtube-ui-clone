@@ -1,10 +1,3 @@
-// Language: scss
-
-//
-// Basic Modifying as per your requirement
-//
-
-// primary__colors
 $chips: #e5e5e5;
 $text__cards: #5f5f5f;
 $white: #ffffff;
@@ -32,17 +25,31 @@ body button {
   justify-content: space-between;
   top: 0;
   left: 0;
-  padding: 10px;
+  padding: 3px 15px;
   background: $white;
   position: fixed;
   width: 100vw;
   z-index: 999;
+  border: 2px solid red;
 
-  &__main__section {
-    width: calc(100vw - 1200px);
+  &__left__section {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid green;
+    width: 15%;
+    .logo {
+      // border: 2px solid red;
+      width: 100%;
+    }
+  }
+
+  &__main__section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid fuchsia;
 
     &__content {
       background: $chips;
@@ -83,6 +90,8 @@ body button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid green;
+    width: 20%;
   }
   &__right__section button {
     margin-inline: 10px;
