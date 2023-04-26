@@ -1,27 +1,20 @@
-YouTube UI Clone
-This repository contains a clone of the YouTube user interface built with HTML, CSS, and JavaScript. The purpose of this project is to practice front-end development skills by recreating a popular website's design and functionality.
+<h1>YouTube UI Clone</h1>
 
-Screenshot of the YouTube UI Clone
+This is a project that clones the user interface (UI) of YouTube, the popular video-sharing platform. The project is implemented using HTML, CSS, and JavaScript, and aims to replicate the look and feel of YouTube.
 
-Features
-Navigation bar with links to different pages
-Search bar with autocomplete suggestions
-Video player with playback controls
-Related videos list
-Comments section
-Like and dislike buttons
-Subscribe button
-Technologies Used
-HTML
-CSS
-JavaScript
-Usage
-To view the YouTube UI Clone, simply open the index.html file in your web browser.
+<h3>Usage</h3>
 
-Contributing
+`Clone the repository to your local machine using Git or GitHub Desktop.`
+<br>
+`Open the index.html file in your web browser.`
+
+
+That's it! You should now see the YouTube UI Clone website in your web browser.
+
+<h3>Contributing</h3>
+
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or pull request.
 
-Credits
-This project was created by Ekanshuj Garg as a learning exercise.
+<h3>Credits</h3>
 
 The YouTube logo and other related graphics are the property of YouTube and are used here for educational purposes only.
