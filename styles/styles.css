@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: #121212;
+  width: 100vw;
 }
 
 body button {
@@ -19,94 +20,71 @@ body button {
   top: 0;
   left: 0;
   padding: 3px 15px;
-  background: #ffffff;
+  background: #121212;
   position: fixed;
   width: 100vw;
+  height: 8vh;
   z-index: 999;
-  border: 2px solid red;
+  border: 1px solid red;
 }
 .navigation__left__section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 2px solid green;
+  justify-content: space-evenly;
   width: 15%;
-}
-.navigation__left__section .logo {
-  width: 100%;
 }
 .navigation__main__section {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid fuchsia;
+  background-color: #121212;
 }
-.navigation__main__section__content {
-  background: #e5e5e5;
+.navigation__main__section .input {
+  flex: 1;
+}
+.navigation__main__section .input input {
+  width: 100%;
+  height: 39px;
+  border-radius: 35px 0px 0px 35px;
+  border: none;
+  outline: none;
+  padding: 0px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #121212;
+  color: #ffffff;
+  border: 0.001px solid rgb(63, 59, 59);
+}
+.navigation__main__section .svg {
+  background-color: #272626;
+  padding-inline: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  float: left;
-  padding: 1px 1px;
-}
-.navigation__main__section__content input {
-  color: #5f5f5f;
-  border: none;
-  height: 37px;
-  padding: 10px 5px;
-  width: 95%;
-  font-size: 1.095rem;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
-  -webkit-margin-start: 1px;
-          margin-inline-start: 1px;
-}
-.navigation__main__section__content > button svg {
-  padding-top: 4px;
-  margin-inline: 10px;
-}
-.navigation__main__section__container {
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
-  border: 1px solid #e5e5e5;
-  padding: 0px 4px;
-  border-radius: 50%;
-}
-.navigation__main__section__container > button svg {
-  padding-top: 5px;
+  height: 39.5px;
+  border-radius: 0px 35px 35px 0px;
 }
 .navigation__right__section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
-  width: 20%;
+  width: 15%;
 }
-.navigation__right__section button {
-  margin-inline: 10px;
-  aspect-ratio: 1;
-  width: 37px;
-  border-radius: 50%;
+.navigation__right__section .sign__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(63, 59, 59);
+  color: #3ea6ff;
+  border-radius: 35px;
+  padding: 8px 9px;
+  margin-left: 11px;
 }
-.navigation__right__section .navigation__profile {
-  background: #121212;
-  cursor: pointer;
-}
-
-.navigation__icon {
-  aspect-ratio: 1;
-  width: 30px;
-}
-
-.button__icons {
-  background: transparent;
-  border: none;
-}
-
-.navigation img {
-  cursor: pointer;
+.navigation__right__section .sign__in span {
+  padding: 0px 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .chips {
@@ -137,17 +115,17 @@ body button {
 }
 
 .section__aside {
-  background: #ffffff;
-  width: calc(100vw - 87%);
+  background: #121212;
+  width: calc(100vw - 82%);
   position: fixed;
-  top: 62px;
+  top: 55px;
   left: 0;
   bottom: 0;
   overflow-y: scroll;
   padding: 10px 0rem;
 }
 .section__aside span {
-  color: #121212;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 .section__aside hr {
